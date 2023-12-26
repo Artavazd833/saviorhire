@@ -14,7 +14,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php tenweb_post_thumbnail(); ?>
+	<?php saviorhire_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php

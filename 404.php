@@ -45,8 +45,8 @@ get_header();
 
 					<?php
 					/* translators: %1$s: smiley */
-					$tenweb_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'saviorhire' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$tenweb_archive_content" );
+					$saviorhire_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'saviorhire' ), convert_smilies( ':)' ) ) . '</p>';
+					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$saviorhire_archive_content" );
 
 					the_widget( 'WP_Widget_Tag_Cloud' );
 					?>

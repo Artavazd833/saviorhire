@@ -1,10 +1,5 @@
 <?php
 /**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package saviorhire
  */
@@ -21,16 +16,15 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();?>
-			
-			
+		</div> 
 
+			
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'saviorhire' ); ?></button>
 			<?php
@@ -42,5 +36,5 @@
 				)
 			);
 			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		</nav>
+	</header>

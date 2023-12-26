@@ -22,14 +22,14 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				tenweb_posted_on();
-				tenweb_posted_by();
+				saviorhire_posted_on();
+				saviorhire_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php tenweb_post_thumbnail(); ?>
+	<?php saviorhire_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -58,6 +58,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php tenweb_entry_footer(); ?>
+		<?php saviorhire_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

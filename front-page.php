@@ -57,15 +57,8 @@
         $(document).ready(loadRecaptcha);
     </script>
 
-    <div id="input-section">
-        <label for="description">Enter Description:</label>
-        <input type="text" id="description">
-        <button id="generateBtn">Generate Your Website</button>
-    </div>
+    
 
-    <div id="output-section" style="display: none;">
-        <h2>Generated Business Names:</h2>
-        <ul id="businessNames"></ul>
-    </div>
+    
 
 

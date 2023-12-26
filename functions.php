@@ -10,7 +10,7 @@
 if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
-function tenweb_setup() {
+function saviorhire_setup() {
 	
 	load_theme_textdomain( 'saviorhire', get_template_directory() . '/languages' );
 
@@ -44,7 +44,7 @@ function tenweb_setup() {
 	add_theme_support(
 		'custom-background',
 		apply_filters(
-			'tenweb_custom_background_args',
+			'saviorhire_custom_background_args',
 			array(
 				'default-color' => 'ffffff',
 				'default-image' => '',
@@ -64,14 +64,14 @@ function tenweb_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'tenweb_setup' );
+add_action( 'after_setup_theme', 'saviorhire_setup' );
 
-function tenweb_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'tenweb_content_width', 640 );
+function saviorhire_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'saviorhire_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'tenweb_content_width', 0 );
+add_action( 'after_setup_theme', 'saviorhire_content_width', 0 );
 
-function tenweb_widgets_init() {
+function saviorhire_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Sidebar', 'saviorhire' ),
@@ -84,10 +84,10 @@ function tenweb_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'tenweb_widgets_init' );
+add_action( 'widgets_init', 'saviorhire_widgets_init' );
 
 
-function tenweb_scripts() {
+function saviorhire_scripts() {
 	wp_enqueue_style( 'saviorhire-style',get_template_directory_uri() . '/dist/css/style.min.css', array(), _S_VERSION );
 
 	wp_enqueue_script( 'saviorhire-scripts', get_template_directory_uri() . '/dist/js/all.min.js', array(), _S_VERSION, true );
@@ -96,12 +96,10 @@ function tenweb_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'tenweb_scripts' );
+
+add_action( 'wp_enqueue_scripts', 'saviorhire_scripts' );
 
 require get_template_directory() . '/inc/custom-header.php';
 require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
-
-
-
