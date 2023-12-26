@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package tenweb
+ * @package saviorhire
  */
 
 /**
@@ -33,7 +33,7 @@ function tenweb_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'tenweb-style',
+				'stylesheet' => 'saviorhire-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
