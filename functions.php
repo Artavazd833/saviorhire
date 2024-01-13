@@ -88,7 +88,7 @@ add_action( 'widgets_init', 'saviorhire_widgets_init' );
 
 
 function saviorhire_scripts() {
-	wp_enqueue_style( 'saviorhire-style',get_template_directory_uri() . '/dist/css/style.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'saviorhire-style',get_template_directory_uri() . '/assets/css/style.min.css', array(), _S_VERSION );
 
 	wp_enqueue_script( 'saviorhire-scripts', get_template_directory_uri() . '/dist/js/all.min.js', array(), _S_VERSION, true );
 

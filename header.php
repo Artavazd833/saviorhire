@@ -19,7 +19,7 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<div class="site-branding col-md4">
 			<?php
 			the_custom_logo();?>
 		</div> 
@@ -38,3 +38,4 @@
 			?>
 		</nav>
 	</header>
+	<main class="site-main">

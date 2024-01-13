@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -10,17 +11,14 @@
  */
 
 ?>
+</main>
+<footer id="colophon" class="site-footer">
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			
-			<span class="sep"> | </span>
-				
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>

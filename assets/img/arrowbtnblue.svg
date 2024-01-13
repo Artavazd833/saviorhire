@@ -1,0 +1,21 @@
+<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="12" height="8" fill="#F5F5F5" />
+    <g id="1" clip-path="url(#clip0_0_1)">
+        <rect width="1440" height="4418" transform="translate(-1005 -47)" fill="white" />
+        <g id="Group 115">
+            <rect id="Rectangle 55" x="-1005" y="-47" width="1440" height="106" fill="white" />
+            <g id="Frame 21">
+                <g id="Group 113">
+                    <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.36891 0L5.44811 4.44444L8.52731 0H11.1511L5.57555 8L0 0H2.36891Z"
+                        fill="#0F4A87" />
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <clipPath id="clip0_0_1">
+            <rect width="1440" height="4418" fill="white" transform="translate(-1005 -47)" />
+        </clipPath>
+    </defs>
+</svg>
