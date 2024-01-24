@@ -15,7 +15,7 @@
 <footer id="colophon" class="site-footer">
 
     <div class="footer-content">
-        <div>
+        <div class="footer-logos">
             <div class="footer-logo">
                 <a href="<?php get_home_url() ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-white.png"></a>
             </div>
@@ -66,6 +66,7 @@
                 ?>
             </div>
             <div class="footer-menu services">
+                <h3><?php the_field('footer_services_headline', 'option'); ?></h3>
                 <?php
                 wp_nav_menu(
                     array(
@@ -98,11 +99,14 @@
             </div>
 
         </div>
-        <div>
-
+        <div class="footer-totop">
+            <img src="<?php echo get_template_directory_uri()?>/assets/img/totop.svg" alt="">
+            <span><?php the_field('footer_scroll_text', 'option'); ?></span>
         </div>
     </div>
-    <div class="footer-copyrigt"></div>
+    <div class="footer-copyrigt">
+        <span><?php the_field('copyright_text', 'option'); ?></span>&nbsp&nbsp<?php echo date('Y') ?>
+    </div>
 </footer><!-- #colophon -->
 </div><!-- #page -->
 
