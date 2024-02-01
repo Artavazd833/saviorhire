@@ -275,7 +275,7 @@
             <div class="ts-item t2"></div>
         </div>
     </div>
-    <h2 class=" cl headline2"> <?php the_field('cts_title'); ?></h2>
+    <h2 class=" cl headline2"> Have a question? Let’s talk!</h2>
     <div class="fp-top-btns ocv">
 
         <?php
