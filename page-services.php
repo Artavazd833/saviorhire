@@ -8,7 +8,6 @@
 get_header();
 ?>
 
-<main id="primary" class="site-main services">
     <div class="top-section">
         <h1 class=" headline1"><?php the_field('page_title'); ?></h1>
         <div class="fp-top-paragraph"><?php the_field('top_description'); ?></div>
@@ -24,7 +23,7 @@ get_header();
                     <div class="service-desc">
 
                         <div class="service-title"> <?php the_sub_field('item_headline'); ?></div>
-                        <div class="service-list"> <?php the_sub_field('item_list'); ?></div>
+                        <div class="service-list fp-services-item-list"> <?php the_sub_field('item_list'); ?></div>
                         <div class="service-text"> <?php the_sub_field('item_text'); ?></div>
                         <div class="service-btn">
                             <?php
@@ -168,7 +167,6 @@ get_header();
 </section>
 
 
-</main><!-- #main -->
 
 <?php
 get_footer();

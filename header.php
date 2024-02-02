@@ -16,7 +16,15 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+
+<?php $pagename = get_query_var('pagename');
+if ( !$pagename && $id > 0 ) {
+    $post = $absa_query->get_queried_object();
+    $pagename = $post->post_name;
+}
+?>
+
+<div id="page" class="site <?php echo  $pagename; ?>">
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding col-md4">
