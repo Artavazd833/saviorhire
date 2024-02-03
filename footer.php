@@ -77,26 +77,7 @@
                 );
                 ?>
             </div>
-            <div class="footer-custom-links">
-                <?php if (have_rows('footer_custom_links', 'option')) : ?>
-                    <?php while (have_rows('footer_custom_links', 'option')) : the_row(); ?>
-                        <?php
-                        $link = get_sub_field('custom_link');
-
-                        if ($link) :
-
-                            $link_url = $link['url'];
-
-                            $link_title = $link['title'];
-
-                            $link_target = $link['target'] ? $link['target'] : '_self'; ?>
-
-                            <a class="footer-custom-link" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
-
-                        <?php endif; ?>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-            </div>
+            
 
         </div>
         <div class="footer-totop">
@@ -111,6 +92,17 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+             <script>
+               
+				
+                $(document).ready(function() {
+                    $("#subject").val("<?php echo  $_POST['services'];?>").change();
+
+                    
+                })
+
+
+			 </script>
 
 </body>
 

@@ -23,11 +23,11 @@ get_header();
                     <div class="service-desc">
 
                         <div class="service-title"> <?php the_sub_field('item_headline'); ?></div>
-                        <div class="service-list fp-services-item-list"> <?php the_sub_field('item_list'); ?></div>
                         <div class="service-text"> <?php the_sub_field('item_text'); ?></div>
+                        <div class="service-list fp-services-item-list"> <?php the_sub_field('item_list'); ?></div>
                         <div class="service-btn">
                             <?php
-                            $link = get_field('item_button');
+                            $link = get_sub_field('item_button');
 
                             if ($link) :
 
